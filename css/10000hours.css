@@ -1,0 +1,394 @@
+@import url('reset.css');
+
+@font-face {
+  font-family: 'OTEnjoystoriesBA';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/OTEnjoystoriesBA.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GmarketSansBold';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GmarketSansMedium';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 400;
+  src: url("https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff2") format('woff2'),
+  url("https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff") format('woff'),
+  url("https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.otf") format('opentype');
+}
+html, body {
+  position: relative;
+  background: #5B2386;
+}
+
+* {
+  font-family: 'GmarketSansMedium';
+  text-align: center;
+  box-sizing: border-box;
+  font-size: 24px;
+}
+
+input {
+  border: none;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+  font-family: 'GmarketSansBold';
+  position: relative;
+  height: 66px;
+  font-weight: bold;
+  border-radius: 56px;
+  font-size: 24px;
+  color: #5B2386;
+  background: #FCEE21;
+}
+
+/* utill */
+
+.sr-only {
+  position: absolute;
+  overflow: hidden;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  border: 0;
+  clip: rect(0,0,0,0);
+}
+
+/* styles */
+
+.intro {
+  position: relative;
+  margin-bottom: 102px;
+}
+
+.intro .intro__clock {
+  width: 265px;
+  height: 265px;
+  margin-top: 125px;
+  margin-bottom: 46px;
+}
+
+.intro .intro__title {
+  position: absolute;
+  top: 199px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 564px;
+  height: 112px;
+}
+
+.intro h2 {
+  font-family: 'OTEnjoystoriesBA';
+  font-size: 36px;
+  line-height: 40px;
+  color: #F5DF4D;
+  margin-bottom: 78px;
+}
+
+.intro__description {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 85px;
+}
+
+.intro p {
+  font-family: 'GmarketSansMedium';
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+  color: white;
+}
+
+.intro strong {
+  font-family: 'GmarketSansBold';
+  font-size: 18px;
+  line-height: 24px;
+}
+
+
+.intro .img--quotes {
+  position: absolute;
+  top: 567px;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.submit {
+  font-family: 'GmarketSansMedium';
+  color: white;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: normal;
+}
+
+.submit__professional,
+.submit__time {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 57px;
+  margin-bottom: 27px;
+}
+
+.submit__time {
+  margin-bottom: 115px;
+}
+
+.submit__time--device {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.submit__professional input,
+.submit__time input {
+  margin: 0 17px;
+  width: 228px;
+  height: 57px;
+  border-radius: 7px;
+  padding: 17px 40px 16px;
+}
+
+.submit__professional input::placeholder,
+.submit__time input::placeholder {
+  font-family: 'GmarketSansMedium';
+  font-size: 24px;
+  color: #BABCBE;
+}
+
+button.submit__button {
+  width: 565px;
+  margin-bottom: 147px;
+}
+
+.submit__button::after {
+  position: absolute;
+  top: 25px;
+  right: -70.45px;
+  content: '';
+  background: no-repeat url('../img/click.png');
+  background-size: contain;
+  width: 33.85px;
+  height: 41.7px;
+}
+
+.answer__wrap {
+  display: flex;
+  justify-content: center;
+  color: #FFFFFF;
+  margin-bottom: 17px;
+  line-height: 72px;
+  font-size: 24px;
+}
+
+.answer strong {
+  font-family: 'GmarketSansBold';
+  font-weight: bold;
+  font-size: 72px;
+  margin: 0 12px;
+}
+
+.answer__wrap:nth-of-type(2) {
+  margin-bottom: 127px;
+}
+
+button.answer__btn--training {
+  width: 356px;
+  margin-bottom: 130px;
+  margin-right: 18px;
+}
+
+button.answer__btn--share {
+  width: 191px;
+  background: #FFFFFF;
+  margin-bottom: 130px;
+}
+
+footer .company-info {
+  margin-bottom: 20px;
+}
+
+footer .company-info img {
+  width: 125px;
+  height: 25px;
+}
+
+footer p {
+  color: #FFFFFF;
+  font-size: 12px;
+}
+
+footer p:last-child {
+  margin-bottom: 60px;
+}
+
+@media screen and (max-width: 765px) {
+  button {
+    height: 68px;
+    border-radius: 13px;
+    font-size: 14px;
+  }
+  .intro .intro__clock {
+    width: 125px;
+    height: 126px;
+    margin-top: 41px;
+    margin-bottom: 31px;
+  }
+
+  .intro .intro__title {
+    top: 76px;
+    width: 250.1px;
+    height: 53px;
+  }
+  
+  .intro h2 {
+    font-size: 22px;
+    line-height: 24.2px;
+    margin-bottom: 62px;
+  }
+  
+  .intro__description {
+    height: 66px;
+  }
+  
+  .intro p {
+    font-size: 14px;
+    line-height: 14px;
+  }
+  
+  .intro strong {
+    font-size: 16px;
+    line-height: 16px;
+  }
+  
+  .intro .img--quotes {
+    position: absolute;
+    top: 310px;
+    height: 20px;
+  }
+  
+  .submit {
+    font-size: 14px;
+    line-height: 14px;
+  }
+  
+  .submit__professional,
+  .submit__time {
+    height: 37px;
+    margin-bottom: 17px;
+  }
+  
+  .submit__time {
+    display: block;
+    height: 100%;
+    margin-bottom: 49px;
+  }
+
+  .submit__time p:first-child {
+    margin-bottom: 19px;
+  }
+  
+  .submit__professional input,
+  .submit__time input {
+    margin: 0 4px;
+    width: 156px;
+    height: 37px;
+    padding: 12px 35px 11px;
+  }
+  
+  .submit__professional input::placeholder,
+  .submit__time input::placeholder {
+    font-size: 14px;
+  }
+  
+  button.submit__button {
+    width: 241px;
+    padding: 19px 46px 17px;
+    margin-bottom: 64px;
+  }
+  
+  .submit__button::after {
+    position: absolute;
+    top: 30px;
+    right: -52.21px;
+    content: '';
+    background: no-repeat url('../img/click.png');
+    background-size: contain;
+    width: 22.68px;
+    height: 27.87px;
+  }
+  
+  .answer__wrap {
+    margin-bottom: 15px;
+    line-height: 24px;
+    font-size: 14px;
+  }
+  
+  .answer strong {
+    font-weight: bold;
+    font-size: 24px;
+    margin: 0 8px;
+  }
+  
+  .answer__wrap:nth-of-type(2) {
+    margin-bottom: 55px;
+  }
+  
+  button.answer__btn--training {
+    width: 186px;
+    height: 40px;
+    margin-bottom: 87.57px;
+    margin-right: 13px;
+    padding: 13.5px 17.5px 12.5px;
+    border-radius: 56px;
+  }
+  
+  button.answer__btn--share {
+    background: #FFFFFF;
+    width: 92px;
+    height: 40px;
+    margin-bottom: 87.57px;
+    margin-right: 13px;
+    padding: 13.5px 19px 12.5px;
+    border-radius: 56px;
+  }
+  
+  footer .company-info {
+    margin-bottom: 17px;
+  }
+  
+  footer .company-info img {
+    width: 91px;
+    height: 18px;
+  }
+  
+  footer p {
+    color: #FFFFFF;
+    font-size: 9px;
+    line-height: 13px;
+  }
+  
+  footer p:last-child {
+    margin-bottom: 30px;
+  }
+}
