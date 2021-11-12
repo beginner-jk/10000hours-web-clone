@@ -81,13 +81,13 @@ button {
 .intro .intro__clock {
   width: 265px;
   height: 265px;
-  margin-top: 125px;
-  margin-bottom: 46px;
+  margin-top: 85px;
+  margin-bottom: 44px;
 }
 
 .intro .intro__title {
   position: absolute;
-  top: 199px;
+  top: 161px;
   left: 0;
   right: 0;
   margin: auto;
@@ -100,7 +100,7 @@ button {
   font-size: 36px;
   line-height: 40px;
   color: #F5DF4D;
-  margin-bottom: 78px;
+  margin-bottom: 81px;
 }
 
 .intro__description {
@@ -113,21 +113,21 @@ button {
 .intro p {
   font-family: 'GmarketSansMedium';
   font-size: 18px;
-  line-height: 24px;
+  line-height: 18px;
   font-weight: 400;
   color: white;
 }
 
 .intro strong {
   font-family: 'GmarketSansBold';
-  font-size: 18px;
+  font-size: 24px;
   line-height: 24px;
 }
 
 
 .intro .img--quotes {
   position: absolute;
-  top: 567px;
+  top: 529px;
   left: 0;
   right: 0;
   margin: auto;
@@ -178,27 +178,32 @@ button {
 
 button.submit__button {
   width: 565px;
-  margin-bottom: 147px;
+  margin-bottom: 151px;
 }
 
 .submit__button::after {
   position: absolute;
-  top: 25px;
-  right: -70.45px;
+  top: 14px;
+  right: -71.45px;
   content: '';
-  background: no-repeat url('../img/click.png');
+  background: no-repeat url(../img/click.png);
   background-size: contain;
-  width: 33.85px;
-  height: 41.7px;
+  width: 64.85px;
+  height: 73.7px;
 }
 
 .answer__wrap {
+  font-family: 'GmarketSansMedium';
   display: flex;
   justify-content: center;
   color: #FFFFFF;
   margin-bottom: 17px;
   line-height: 72px;
   font-size: 24px;
+}
+
+.answer__wrap p {
+  line-height: 66px;
 }
 
 .answer strong {
@@ -209,7 +214,7 @@ button.submit__button {
 }
 
 .answer__wrap:nth-of-type(2) {
-  margin-bottom: 127px;
+  margin-bottom: 123px;
 }
 
 button.answer__btn--training {
@@ -234,6 +239,7 @@ footer .company-info img {
 }
 
 footer p {
+  font-family: 'GmarketSansMedium';
   color: #FFFFFF;
   font-size: 12px;
 }
@@ -248,16 +254,20 @@ footer p:last-child {
     border-radius: 13px;
     font-size: 14px;
   }
+  .intro {
+    margin-bottom: 68px;
+  }
+
   .intro .intro__clock {
     width: 125px;
     height: 126px;
     margin-top: 41px;
-    margin-bottom: 31px;
+    margin-bottom: 28px;
   }
 
   .intro .intro__title {
     top: 76px;
-    width: 250.1px;
+    width: 267.1px;
     height: 53px;
   }
   
@@ -273,18 +283,18 @@ footer p:last-child {
   
   .intro p {
     font-size: 14px;
-    line-height: 14px;
+    line-height: 10px;
   }
   
   .intro strong {
-    font-size: 16px;
+    font-size: 14px;
     line-height: 16px;
   }
   
   .intro .img--quotes {
     position: absolute;
-    top: 310px;
-    height: 20px;
+    top: 308px;
+    width: 296px;
   }
   
   .submit {
@@ -313,7 +323,7 @@ footer p:last-child {
     margin: 0 4px;
     width: 156px;
     height: 37px;
-    padding: 12px 35px 11px;
+    padding: 12px 35px 13px;
   }
   
   .submit__professional input::placeholder,
@@ -323,25 +333,29 @@ footer p:last-child {
   
   button.submit__button {
     width: 241px;
-    padding: 19px 46px 17px;
+    padding: 15px 26.5px 17px;
     margin-bottom: 64px;
   }
   
   .submit__button::after {
     position: absolute;
     top: 30px;
-    right: -52.21px;
+    right: -50.21px;
     content: '';
-    background: no-repeat url('../img/click.png');
+    background: no-repeat url(../img/click.png);
     background-size: contain;
-    width: 22.68px;
-    height: 27.87px;
+    width: 46.68px;
+    height: 47.87px;
   }
   
   .answer__wrap {
     margin-bottom: 15px;
     line-height: 24px;
     font-size: 14px;
+  }
+
+  .answer__wrap p {
+    line-height: 25px;
   }
   
   .answer strong {
@@ -351,15 +365,15 @@ footer p:last-child {
   }
   
   .answer__wrap:nth-of-type(2) {
-    margin-bottom: 55px;
+    margin-bottom: 53px;
   }
   
   button.answer__btn--training {
-    width: 186px;
+    width: 190px;
     height: 40px;
     margin-bottom: 87.57px;
     margin-right: 13px;
-    padding: 13.5px 17.5px 12.5px;
+    padding: 11.5px 1.5px 12.5px;
     border-radius: 56px;
   }
   
@@ -369,7 +383,7 @@ footer p:last-child {
     height: 40px;
     margin-bottom: 87.57px;
     margin-right: 13px;
-    padding: 13.5px 19px 12.5px;
+    padding: 11.5px 2px 12.5px;
     border-radius: 56px;
   }
   
