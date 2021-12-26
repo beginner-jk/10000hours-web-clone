@@ -166,19 +166,21 @@ button {
   width: 228px;
   height: 57px;
   border-radius: 7px;
-  padding: 17px 40px 16px;
+  padding: 17px 30px 16px;
+  text-align: left;
 }
 
 .submit__professional input::placeholder,
 .submit__time input::placeholder {
   font-family: 'GmarketSansMedium';
-  font-size: 24px;
+  font-size: 22px;
   color: #BABCBE;
+  text-align: left;
 }
 
 button.submit__button {
   width: 565px;
-  margin-bottom: 151px;
+  margin-bottom: 101px;
 }
 
 .submit__button::after {
@@ -190,6 +192,35 @@ button.submit__button {
   background-size: contain;
   width: 64.85px;
   height: 73.7px;
+}
+
+.clock-animation {
+  margin-bottom: 101px;
+}
+
+.clock-animation img {
+  display: block;
+  width: 120px;
+  margin: 0 auto;
+  transition: all 3s linear;
+}
+
+@keyframes rotate-clock {
+  from {
+    transform: rotate(0);
+  }
+
+  to {
+    transform: rotate(1080deg);
+  }
+}
+
+.clock-animation.invisible {
+  display: none;
+}
+
+.answer.invisible {
+  display: none;
 }
 
 .answer__wrap {
@@ -227,6 +258,63 @@ button.answer__btn--share {
   width: 191px;
   background: #FFFFFF;
   margin-bottom: 130px;
+}
+
+.modal {
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.modal.invisible {
+  display: none;
+}
+
+.modal-wrap {
+  padding: 20px;
+  width: 600px;
+  height: 600px;
+  background-color: #FFFFFF;
+  border-radius: 20px;
+}
+
+.modal__title {
+  text-align: center;
+  color: #5B2386;
+  font-family: 'OTEnjoystoriesBA';
+}
+
+.modal__title h1 {
+  font-size: 80px;
+}
+
+.modal__title p {
+  font-size: 30px;
+}
+
+.modal__img {
+  margin-bottom: 20px;
+}
+
+.btn-close {
+  font-size: 20px;
+  padding: 10px 40px;
+  line-height: 20px;
+  height: 46px;
+  margin-bottom: 20px;
+  box-shadow: 0px 5px 16px 0px rgb(0 0 0 / 15%);
+}
+
+.btn-close-description {
+  color: #747474;
+  font-size: 13px;
+  font-family: 'GmarketSansMedium';
 }
 
 footer .company-info {
@@ -320,10 +408,11 @@ footer p:last-child {
   
   .submit__professional input,
   .submit__time input {
-    margin: 0 4px;
+    margin: 0 14px;
     width: 156px;
     height: 37px;
-    padding: 12px 35px 13px;
+    padding: 12px 18px 12px;
+    font-size: 14px;
   }
   
   .submit__professional input::placeholder,
@@ -346,6 +435,11 @@ footer p:last-child {
     background-size: contain;
     width: 46.68px;
     height: 47.87px;
+  }
+
+  .clock-animation img {
+    width: 60px;
+    height: 60px;
   }
   
   .answer__wrap {
@@ -385,6 +479,35 @@ footer p:last-child {
     margin-right: 13px;
     padding: 11.5px 2px 12.5px;
     border-radius: 56px;
+  }
+
+  .modal-wrap {
+    width: 330px;
+    height: 450px;
+  }
+
+  .modal__title h1 {
+    font-size: 60px;
+  }
+
+  .modal__title p {
+    font-size: 30px;
+  }
+
+  .modal__img img {
+    width: 250px;
+  }
+
+  .modal .btn-close {
+    width: 241px;
+    border-radius: 15px;
+    padding: 10px 40px;
+    font-size: 15px;
+    height: auto;
+  }
+
+  .btn-close-description {
+    font-size: 10px;
   }
   
   footer .company-info {

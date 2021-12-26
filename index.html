@@ -4,8 +4,9 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>1만 시간의 법칙</title>
   <link rel="stylesheet" href="./css/10000hours.css">
+  <script defer src="./js/10000hours.js"></script>
 </head>
 <body>
   <section class="intro">
@@ -23,28 +24,31 @@
     <form action="./index.html">
       <div class="submit__professional">
         <p>나는</p>
-        <input type="text" placeholder="예)프로그래밍">
+        <input type="text" placeholder="예) 프로그래밍" class="input-job">
         <p>전문가가 될 것이다.</p>
       </div>
       <div class="submit__time">
         <p>그래서 앞으로 매일 하루에</p>
         <div class="submit__time--device">
-          <input type="text" placeholder="예)5시간">
+          <input type="number" placeholder="예) 5" class="input-hour">
           <p>시간씩 훈련할 것이다.</p>
         </div>
       </div>
-      <button class="submit__button" type="submit">
+      <button class="submit__button" type="button">
         나는 며칠 동안 훈련을 해야 1만 시간이 될까?
       </button>
     </form>
   </section>
-  <section class="answer">
-    <div class="answer__wrap">
+  <section class="clock-animation invisible">
+    <img src="./img/loading.png" alt="로딩 이미지">
+  </section>
+  <section class="answer invisible">
+    <div class="answer__wrap answer__wrap--job">
       <p>당신은</p>
       <strong>프로그래밍</strong>
       <p>전문가가 되기 위해서</p>
     </div>
-    <div class="answer__wrap">
+    <div class="answer__wrap answer__wrap--hour">
       <p>대략</p>
       <strong>5110</strong>
       <p>일 이상 훈련하셔야 합니다! :)</p>
@@ -55,6 +59,21 @@
     <button type="button" class="answer__btn--share">
       공유하기
     </button>
+  </section>
+  <section class="modal invisible">
+    <div class="modal-wrap">
+      <header class="modal__title">
+        <h1>화이팅!!♥♥♥</h1>
+        <p>당신의 꿈을 응원합니다!</p>
+      </header>
+      <section class="modal__img">
+        <img src="./img/licat.png" alt="모달 이미지">
+      </section>
+      <button class="btn-close">
+        종료하고 진짜 훈련하러 가기 GO!GO!
+      </button>
+      <p class="btn-close-description">(그냥 닫기 버튼입니다.)</p>
+    </div>
   </section>
   <footer>
     <dl class="company-info">
